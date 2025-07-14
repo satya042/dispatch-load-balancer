@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.dispatchoptimizer.dispatchbalancer.service.impl.DispatchServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.022 s <<< FAILURE! -- in com.dispatchoptimizer.dispatchbalancer.service.impl.DispatchServiceImplTest
+com.dispatchoptimizer.dispatchbalancer.service.impl.DispatchServiceImplTest.generateDispatchPlan_shouldAssignOrdersToVehiclesBasedOnConstraints -- Time elapsed: 0.026 s <<< ERROR!
+java.lang.UnsupportedOperationException
+	at java.base/java.util.ImmutableCollections.uoe(ImmutableCollections.java:142)
+	at java.base/java.util.ImmutableCollections$AbstractImmutableList.sort(ImmutableCollections.java:261)
+	at com.dispatchoptimizer.dispatchbalancer.service.impl.DispatchServiceImpl.generateDispatchPlan(DispatchServiceImpl.java:77)
+	at com.dispatchoptimizer.dispatchbalancer.service.impl.DispatchServiceImplTest.generateDispatchPlan_shouldAssignOrdersToVehiclesBasedOnConstraints(DispatchServiceImplTest.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
